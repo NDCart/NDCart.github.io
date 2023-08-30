@@ -4,8 +4,9 @@
   <title>Nathan's (Lauch)pad</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <style>
   .fakeimg {
@@ -40,6 +41,10 @@
     background: #e42525;
     color: white;
   }
+
+  #banner {
+    background: #1a056e;
+  }
   </style>
 </head>
 <body>
@@ -63,7 +68,7 @@
   </div>
 </nav>
 
-<div class="p-5 bg-primary text-white text-center">
+<div id="banner" class="p-5 text-white text-center">
   <h1>Nathan Carter, Developer</h1>
   <p>Highly driven Software Development graduate experienced in a range of 
         programming languages with a background in Electronic Engineering 
@@ -75,12 +80,12 @@
   <div class="row">
     <div class="col-sm-4">
       <h2>About Me</h2>
-      <img src="images/Profile.jpg" class="img-fluid rounded" style="border-radius: 20%;" alt="A picture of me">
+      <img src="images/Profile.jpg" class="img-fluid rounded" style="border-radius: 25%;" alt="A picture of me">
       <p>It's me!</p>
       <h3 class="mt-4">Connect With Me</h3>
-      <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/nathan-carter-14237b163/"></a>
-      <a class="fa fa-github" target="_blank" href="https://github.com/NDCart"></a>
-      <a class="fa fa-envelope" target="_blank" href="mailto:ncarterbis@gmail.com"></a>
+      <a id="" class="fa fa-github animate__animated animate__slideInLeft" target="_blank" href="https://github.com/NDCart"></a>
+      <a class="fa fa-linkedin animate__animated animate__slideInLeft" target="_blank" href="https://www.linkedin.com/in/nathan-carter-14237b163/"></a>
+      <a class="fa fa-envelope animate__animated animate__slideInLeft" target="_blank" href="mailto:ncarterbis@gmail.com"></a>
     </div>
     <div class="col-sm-8">
       <h2>TITLE HEADING</h2>
@@ -105,7 +110,7 @@
 </div>
 
 <div class="mt-5 p-4 bg-dark text-white text-center">
-  <p>Footer</p>
+  <p>Made by Nathan Carter</p>
 </div>
 
 </body>
