@@ -19,31 +19,46 @@
   font-size: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 8%; 
+  margin: 10px 5px;
+  border-radius: 8%;
+  position: relative;
+  animation-name: iconEntry;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  transition: .5s;
   }
 
   .fa:hover {
-    opacity: 0.7;
+    transform: scale(1.25);
+    opacity: .7;
  }
 
   .fa-linkedin {
   background: #007bb5;
   color: white;
+  animation-delay: 1.2s;
   }
 
   .fa-github {
   background: #483b79;
   color: white;
+  animation-delay: 1.4s;
   }
 
   .fa-envelope {
     background: #e42525;
     color: white;
+    animation-delay: 1s;
   }
 
   #banner {
     background: #3a0381a6;
+  }
+
+  @keyframes iconEntry {
+    0%    {left:-250%;}
+    100%  {left:0px;}
   }
 
   </style>
@@ -84,9 +99,11 @@
       <img src="images/Profile.jpg" class="img-fluid rounded" style="border-radius: 25%;" alt="A picture of me">
       <p>It's me!</p>
       <h3 class="mt-4">Connect With Me</h3>
-      <a class="fa fa-github animate__animated animate__fadeInLeftBig animate__delay-1s" target="_blank" href="https://github.com/NDCart"></a>
-      <a class="fa fa-linkedin animate__animated animate__fadeInLeftBig animate__fast animate__delay-1s" target="_blank" href="https://www.linkedin.com/in/nathan-carter-14237b163/"></a>
-      <a class="fa fa-envelope animate__animated animate__fadeInLeftBig animate__faster animate__delay-1s" target="_blank" href="mailto:ncarterbis@gmail.com"></a>
+      <div class="icon">
+      <a class="fa fa-github" target="_blank" href="https://github.com/NDCart"></a>
+      <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/nathan-carter-14237b163/"></a>
+      <a class="fa fa-envelope" target="_blank" href="mailto:ncarterbis@gmail.com"></a>
+      </div>
     </div>
     <div class="col-sm-8 animate__animated animate__fadeInUpBig">
       <h2>TITLE HEADING</h2>
