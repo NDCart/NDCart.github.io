@@ -65,7 +65,7 @@
   }
 
   .fa-github {
-    background: #483b79;
+    background: rgb(58, 7, 105);
     color: white;
     font-size: 36px;
     padding: 15px 18px 19px 18px;
@@ -80,9 +80,10 @@
 
   #banner {
     background-color: #001950;
-    background-image: url(images/Garden-dark.jpg);
-    background-position:center;
-    background-size: cover;
+    background-image: url(images/tokyo-skyline.jpg);
+    object-fit: cover;
+    background-position-x: 30%;
+    background-position-y: 40%;
     text-shadow: 5px 5px 10px black;
     font-weight: bolder;
   }
@@ -101,16 +102,17 @@
 <div id="banner" class="p-5 text-white text-center animate__animated animate__slideInDown">
   <h1 class="display-1" style="font-weight: bold;">Nathan Carter</h1>
   <h2 style="font-weight: bold; font-style: italic;">Software Developer</h2>
+  <p class="float-end">Photo by <a href="https://unsplash.com/@miyatankun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Takashi Miyazaki</a> on <a href="https://unsplash.com/photos/64ajtpEzlYc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
 </div>
 
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-4 animate__animated animate__fadeInUp">
-      <a class="fa fa-github" target="_blank" href="https://github.com/NDCart" title="GitHub Profile"></a>
-      <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/nathan-carter-14237b163/" title="LinkedIn Profile"></a>
-      <a class="fa fa-envelope" target="_blank" href="mailto:ncarterbis@gmail.com" data-bs-toggle="tooltip" title="Shoot me an Email!"></a>
-      <a class="fa fa-download" href="docs/Nathan Carter.pdf" download="Nathan Carter" data-bs-toggle="tooltip" title="Download my CV!"></a>
-      <span data-bs-toggle="modal" data-bs-target="#qrModal"><a class="fa fa-qrcode" data-bs-toggle="tooltip" title="Scan QR Code"></a></span>
+      <a class="fa fa-github border border-black" target="_blank" href="https://github.com/NDCart" title="GitHub Profile"></a>
+      <a class="fa fa-linkedin border border-black" target="_blank" href="https://www.linkedin.com/in/nathan-carter-14237b163/" title="LinkedIn Profile"></a>
+      <a class="fa fa-envelope border-black" target="_blank" href="mailto:ncarterbis@gmail.com" data-bs-toggle="tooltip" title="Shoot me an Email!"></a>
+      <a class="fa fa-download border-black" href="docs/Nathan Carter.pdf" download="Nathan Carter" data-bs-toggle="tooltip" title="Download my CV!"></a>
+      <span data-bs-toggle="modal" data-bs-target="#qrModal"><a class="fa fa-qrcode border border-black" data-bs-toggle="tooltip" title="Scan QR Code"></a></span>
       <img src="images/Profile.jpg" class="img-fluid rounded" style="border-radius: 25%; margin-bottom: 25px;" alt="A picture of me">
       <p>Hi, I'm Nathan! A graduate software developer, avid reader, (self-proclaimed) dog trainer and aspiring indie game developer.</p>
     </div>
@@ -147,7 +149,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title">Get a link to this page:</h1>
+        <h1 class="modal-title mx-auto d-block">Get a link to this page:</h1>
       </div>
 
       <div class="modal-body">
